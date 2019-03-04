@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B327034220F8FA300B9542A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B327033220F8FA300B9542A /* main.cpp */; };
+		0BBCAA99221123F500DD2A32 /* simulate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BBCAA8E221123F500DD2A32 /* simulate.cpp */; };
+		0BBCAA9A221123F500DD2A32 /* tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BBCAA8F221123F500DD2A32 /* tests.cpp */; };
+		0BBCAA9B221123F500DD2A32 /* debugging_helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BBCAA90221123F500DD2A32 /* debugging_helpers.cpp */; };
+		0BBCAA9C221123F500DD2A32 /* localizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BBCAA91221123F500DD2A32 /* localizer.cpp */; };
+		0BBCAA9D221123F500DD2A32 /* helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BBCAA93221123F500DD2A32 /* helpers.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0B32702E220F8FA300B9542A /* CopyFiles */ = {
+		0BBCAA822211233400DD2A32 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +27,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0B327030220F8FA300B9542A /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B327033220F8FA300B9542A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0BBCAA842211233400DD2A32 /* translate python to C++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "translate python to C++"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBCAA8E221123F500DD2A32 /* simulate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simulate.cpp; sourceTree = "<group>"; };
+		0BBCAA8F221123F500DD2A32 /* tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tests.cpp; sourceTree = "<group>"; };
+		0BBCAA90221123F500DD2A32 /* debugging_helpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = debugging_helpers.cpp; sourceTree = "<group>"; };
+		0BBCAA91221123F500DD2A32 /* localizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = localizer.cpp; sourceTree = "<group>"; };
+		0BBCAA92221123F500DD2A32 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		0BBCAA93221123F500DD2A32 /* helpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = helpers.cpp; sourceTree = "<group>"; };
+		0BBCAA94221123F500DD2A32 /* maps */ = {isa = PBXFileReference; lastKnownFileType = folder; path = maps; sourceTree = "<group>"; };
+		0BBCAA95221123F500DD2A32 /* simulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simulate.h; sourceTree = "<group>"; };
+		0BBCAA96221123F500DD2A32 /* debugging_helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debugging_helpers.h; sourceTree = "<group>"; };
+		0BBCAA97221123F500DD2A32 /* tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tests.h; sourceTree = "<group>"; };
+		0BBCAA98221123F500DD2A32 /* localizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = localizer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0B32702D220F8FA300B9542A /* Frameworks */ = {
+		0BBCAA812211233400DD2A32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,94 +52,108 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B327027220F8FA300B9542A = {
+		0BBCAA7B2211233400DD2A32 = {
 			isa = PBXGroup;
 			children = (
-				0B327032220F8FA300B9542A /* test */,
-				0B327031220F8FA300B9542A /* Products */,
+				0BBCAA862211233400DD2A32 /* translate python to C++ */,
+				0BBCAA852211233400DD2A32 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0B327031220F8FA300B9542A /* Products */ = {
+		0BBCAA852211233400DD2A32 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B327030220F8FA300B9542A /* test */,
+				0BBCAA842211233400DD2A32 /* translate python to C++ */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0B327032220F8FA300B9542A /* test */ = {
+		0BBCAA862211233400DD2A32 /* translate python to C++ */ = {
 			isa = PBXGroup;
 			children = (
-				0B327033220F8FA300B9542A /* main.cpp */,
+				0BBCAA90221123F500DD2A32 /* debugging_helpers.cpp */,
+				0BBCAA96221123F500DD2A32 /* debugging_helpers.h */,
+				0BBCAA93221123F500DD2A32 /* helpers.cpp */,
+				0BBCAA92221123F500DD2A32 /* helpers.h */,
+				0BBCAA91221123F500DD2A32 /* localizer.cpp */,
+				0BBCAA98221123F500DD2A32 /* localizer.h */,
+				0BBCAA94221123F500DD2A32 /* maps */,
+				0BBCAA8E221123F500DD2A32 /* simulate.cpp */,
+				0BBCAA95221123F500DD2A32 /* simulate.h */,
+				0BBCAA8F221123F500DD2A32 /* tests.cpp */,
+				0BBCAA97221123F500DD2A32 /* tests.h */,
 			);
-			path = test;
+			path = "translate python to C++";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B32702F220F8FA300B9542A /* test */ = {
+		0BBCAA832211233400DD2A32 /* translate python to C++ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B327037220F8FA300B9542A /* Build configuration list for PBXNativeTarget "test" */;
+			buildConfigurationList = 0BBCAA8B2211233400DD2A32 /* Build configuration list for PBXNativeTarget "translate python to C++" */;
 			buildPhases = (
-				0B32702C220F8FA300B9542A /* Sources */,
-				0B32702D220F8FA300B9542A /* Frameworks */,
-				0B32702E220F8FA300B9542A /* CopyFiles */,
+				0BBCAA802211233400DD2A32 /* Sources */,
+				0BBCAA812211233400DD2A32 /* Frameworks */,
+				0BBCAA822211233400DD2A32 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = test;
-			productName = test;
-			productReference = 0B327030220F8FA300B9542A /* test */;
+			name = "translate python to C++";
+			productName = "translate python to C++";
+			productReference = 0BBCAA842211233400DD2A32 /* translate python to C++ */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0B327028220F8FA300B9542A /* Project object */ = {
+		0BBCAA7C2211233400DD2A32 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Chen Hao Chang";
 				TargetAttributes = {
-					0B32702F220F8FA300B9542A = {
+					0BBCAA832211233400DD2A32 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 0B32702B220F8FA300B9542A /* Build configuration list for PBXProject "test" */;
+			buildConfigurationList = 0BBCAA7F2211233400DD2A32 /* Build configuration list for PBXProject "translate python to C++" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0B327027220F8FA300B9542A;
-			productRefGroup = 0B327031220F8FA300B9542A /* Products */;
+			mainGroup = 0BBCAA7B2211233400DD2A32;
+			productRefGroup = 0BBCAA852211233400DD2A32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B32702F220F8FA300B9542A /* test */,
+				0BBCAA832211233400DD2A32 /* translate python to C++ */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0B32702C220F8FA300B9542A /* Sources */ = {
+		0BBCAA802211233400DD2A32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B327034220F8FA300B9542A /* main.cpp in Sources */,
+				0BBCAA9B221123F500DD2A32 /* debugging_helpers.cpp in Sources */,
+				0BBCAA9D221123F500DD2A32 /* helpers.cpp in Sources */,
+				0BBCAA99221123F500DD2A32 /* simulate.cpp in Sources */,
+				0BBCAA9C221123F500DD2A32 /* localizer.cpp in Sources */,
+				0BBCAA9A221123F500DD2A32 /* tests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0B327035220F8FA300B9542A /* Debug */ = {
+		0BBCAA892211233400DD2A32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +212,7 @@
 			};
 			name = Debug;
 		};
-		0B327036220F8FA300B9542A /* Release */ = {
+		0BBCAA8A2211233400DD2A32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -236,7 +264,7 @@
 			};
 			name = Release;
 		};
-		0B327038220F8FA300B9542A /* Debug */ = {
+		0BBCAA8C2211233400DD2A32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -244,7 +272,7 @@
 			};
 			name = Debug;
 		};
-		0B327039220F8FA300B9542A /* Release */ = {
+		0BBCAA8D2211233400DD2A32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -255,25 +283,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B32702B220F8FA300B9542A /* Build configuration list for PBXProject "test" */ = {
+		0BBCAA7F2211233400DD2A32 /* Build configuration list for PBXProject "translate python to C++" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B327035220F8FA300B9542A /* Debug */,
-				0B327036220F8FA300B9542A /* Release */,
+				0BBCAA892211233400DD2A32 /* Debug */,
+				0BBCAA8A2211233400DD2A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B327037220F8FA300B9542A /* Build configuration list for PBXNativeTarget "test" */ = {
+		0BBCAA8B2211233400DD2A32 /* Build configuration list for PBXNativeTarget "translate python to C++" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B327038220F8FA300B9542A /* Debug */,
-				0B327039220F8FA300B9542A /* Release */,
+				0BBCAA8C2211233400DD2A32 /* Debug */,
+				0BBCAA8D2211233400DD2A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0B327028220F8FA300B9542A /* Project object */;
+	rootObject = 0BBCAA7C2211233400DD2A32 /* Project object */;
 }
